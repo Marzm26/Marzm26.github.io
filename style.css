@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 250%;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  font-size: 100%;
+  text-align: center;
+  color: #838383;
+}
+
+footer {
+  font-size: 80%;
+  color: #838383;
+}
+
+ul {
+  display: inline-block;
+  list-style: square;
+  text-align: left;
+  margin-top: -0.5%;
+  color: #3d3d3d;
+}
+
+.figma {
+  
+}
+
+.top {
+  background: #f1f1f1;
+}
