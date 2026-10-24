@@ -43,5 +43,6 @@ li>a {
 }
 
 li>a:hover {
+  font-weight: bold;
   color: red;
 }
