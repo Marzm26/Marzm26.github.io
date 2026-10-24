@@ -1,3 +1,7 @@
+.top {
+  background: #f1f1f1;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
@@ -30,10 +34,14 @@ ul {
   color: #3d3d3d;
 }
 
-.figma {
-  
+a:hover {
+  font-weight: bold;
 }
 
-.top {
-  background: #f1f1f1;
+li>a {
+  color: black;
+}
+
+li>a:hover {
+  color: red;
 }
