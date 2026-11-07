@@ -1,11 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eaeaea;
+  text-align: center;
+  margin: 0;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 1500px) {
+    #navbar {
+      display: none;
+    }
+    main {
+      width: 100%;
+    }
+  }
+   @media (max-width: 1000px) {
+    width: 100%;
+    main {
+      width: 100%;
+    }
+  }
+}
+
 .top {
   background: #f1f1f1;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  text-align: center;
+main {
+  width: 90%;
+  background: #fbfbfc;
+  float: right;
+  padding-bottom: 1em;
 }
 
 h1 {
@@ -21,9 +46,16 @@ h4 {
   color: #838383;
 }
 
+img.scale {
+  width: 2%;
+  height: auto;
+}
+
 footer {
   font-size: 80%;
   color: #838383;
+  clear: both;
+  margin-top: 55%;
 }
 
 ul {
@@ -45,4 +77,46 @@ li>a {
 li>a:hover {
   font-weight: bold;
   color: red;
+}
+
+/*Navigation bar*/
+#navbar {
+  float: left;
+  width: 10%;
+  background: #fbfbfc;
+  border: 1% 1% 1% 1% #3d3d3d;
+}
+
+#navbar ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+#navbar h3 {
+  margin-left: 2em;
+  float: left;
+}
+
+#navbar ul li {
+  float: left;
+  width: 90%;
+  margin-bottom: 0em;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: underline;
+  padding: 0.5em 0.5em;
+  color: rgb(0, 0, 0);
+}
+
+#navbar ul li a.current {
+  color: rgb(255, 0, 0);
+  margin-left: 0.25em;
+}
+
+#navbar ul li a:hover {
+  font-weight: bold;
+  color: red;
+  margin-left: 0.25em;
 }
