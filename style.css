@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #eaeaea;
-  text-align: center;
-  margin: 0;
+  text-align: left;
   width: 80%;
   margin: 0 auto;
 
@@ -10,14 +13,18 @@ body {
     #navbar {
       display: none;
     }
+
     main {
-      width: 100%;
+      width: 96%;
     }
   }
-   @media (max-width: 1000px) {
+
+  @media (max-width: 1000px) {
     width: 100%;
+
     main {
-      width: 100%;
+      width: 90%;
+      padding: 0 5% 2%;
     }
   }
 }
@@ -27,10 +34,10 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 84%;
   background: #fbfbfc;
   float: right;
-  padding-bottom: 1em;
+  padding: 0 2% 2%;
 }
 
 h1 {
@@ -46,16 +53,14 @@ h4 {
   color: #838383;
 }
 
-img.scale {
-  width: 2%;
-  height: auto;
-}
-
 footer {
   font-size: 80%;
   color: #838383;
   clear: both;
   margin-top: 55%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
 }
 
 ul {
@@ -82,41 +87,46 @@ li>a:hover {
 /*Navigation bar*/
 #navbar {
   float: left;
-  width: 10%;
-  background: #fbfbfc;
-  border: 1% 1% 1% 1% #3d3d3d;
+  width: 9%;
+  background: #ffedcf;
+  margin: 1%;
+  border: 0.25em groove #eceae0;
+  border-radius: 0.5em;
 }
 
 #navbar ul {
   list-style-type: none;
-  width: 100%;
+  width: 80%;
+  padding-left: 1em;
 }
 
 #navbar h3 {
-  margin-left: 2em;
+  margin-left: 1em;
   float: left;
 }
 
 #navbar ul li {
   float: left;
-  width: 90%;
+  width: 100%;
   margin-bottom: 0em;
 }
 
 #navbar ul li a {
   display: block;
   text-decoration: underline;
-  padding: 0.5em 0.5em;
+  padding: 0.5em 0em;
   color: rgb(0, 0, 0);
 }
 
 #navbar ul li a.current {
   color: rgb(255, 0, 0);
   margin-left: 0.25em;
+  background-color: #ffedcf;
 }
 
 #navbar ul li a:hover {
   font-weight: bold;
   color: red;
   margin-left: 0.25em;
+  transition: all 0.3s ease;
 }
