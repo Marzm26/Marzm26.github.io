@@ -8,6 +8,8 @@ body {
   text-align: left;
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1500px) {
     #navbar {
@@ -17,14 +19,27 @@ body {
     main {
       width: 96%;
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 10px;
+    }
   }
 
+  /*Mobile*/
   @media (max-width: 1000px) {
     width: 100%;
 
     main {
       width: 90%;
       padding: 0 5% 2%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-gap: 10px;
     }
   }
 }
@@ -40,6 +55,27 @@ main {
   padding: 0 2% 2%;
 }
 
+/*Grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+}
+
+.grid-container>div {
+  padding: 1em;
+  background: #eaeaea;
+  border-radius: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.grid-container>div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*---------*/
+
 h1 {
   margin: 0;
   font-size: 250%;
@@ -51,6 +87,11 @@ h4 {
   font-size: 100%;
   text-align: center;
   color: #838383;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -92,6 +133,9 @@ li>a:hover {
   margin: 1%;
   border: 0.25em groove #eceae0;
   border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 #navbar ul {
@@ -109,6 +153,7 @@ li>a:hover {
   float: left;
   width: 100%;
   margin-bottom: 0em;
+
 }
 
 #navbar ul li a {
@@ -116,6 +161,7 @@ li>a:hover {
   text-decoration: underline;
   padding: 0.5em 0em;
   color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
 }
 
 #navbar ul li a.current {
@@ -128,5 +174,4 @@ li>a:hover {
   font-weight: bold;
   color: red;
   margin-left: 0.25em;
-  transition: all 0.3s ease;
 }
