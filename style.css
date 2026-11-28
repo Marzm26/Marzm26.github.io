@@ -45,7 +45,10 @@ body {
 }
 
 .top {
-  background: #f1f1f1;
+  background: #FFAC89;
+  margin-top: 1em;
+  border-radius: 1em 1em 0 0;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -53,6 +56,8 @@ main {
   background: #fbfbfc;
   float: right;
   padding: 0 2% 2%;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Grid*/
@@ -74,7 +79,20 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.grid-container>.full_width {
+  grid-column: 1 / -1;
+}
+
 /*---------*/
+
+/*Text*/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
 
 h1 {
   margin: 0;
@@ -86,7 +104,7 @@ h4 {
   margin: 0;
   font-size: 100%;
   text-align: center;
-  color: #838383;
+  color: #565656;
 }
 
 img {
@@ -96,12 +114,15 @@ img {
 
 footer {
   font-size: 80%;
-  color: #838383;
+  color: #ffffff;
+  background: #3d3d3d;
   clear: both;
   margin-top: 55%;
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
+  border-radius: 1em 1em 1em 1em;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -135,7 +156,7 @@ li>a:hover {
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
-  
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 #navbar ul {
@@ -153,7 +174,6 @@ li>a:hover {
   float: left;
   width: 100%;
   margin-bottom: 0em;
-
 }
 
 #navbar ul li a {

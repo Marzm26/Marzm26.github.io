@@ -3,10 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Favicon</title>
+    <title>Favicon - Demo Site</title>
     <link rel="shortcut icon" href="MIcon.png" type="favicon/ico">
     <link rel="stylesheet" href="style.css">
     <meta description="Favicon information.">
+    <script src="https://kit.fontawesome.com/96e2dfcfff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +26,7 @@
         <aside id="navbar">
             <h3>Quick Access</h3>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li> <a href="../alaska.html">Alaska</a></li>
                 <li><a href="../js_game.html">JavaScript</a></li>
                 <li> <a href="../favicon.html" class="current">Favicon</a></li>
@@ -30,21 +35,59 @@
 
         <main>
             <h2 id="page_top"> <img src="MIcon.png" alt="Favicon"> How I made my favicon</h2>
+            <p>This is a brief description of how I made and implemented my Favicon, and maybe a short tutorial on how
+                you can make one too.</p>
+            <br>
 
-            <p>First, I opened up <strong>Figma</strong>, which I've been familiar with for a couple of years now.</p>
-            <img src="figma-3d-icon-free-png.webp" alt="Figma icon" width="150" height="150">
+            <h2>What is a Favicon?</h2>
+            <p>In case you aren't familiar, a favicon is the small icon that appears in a browser tab.</p>
+            <img src="FaviconScreenshot.png">
 
-            <p>Once in the design interface, I used the pen tool to create one half of the M.</p>
-            <img src="Screenshot1.png" alt="One half of an M" width="150" height="150">
+            <br><br><br>
 
-            <p>Then I duplicated &amp; mirrored the half. This is what I exported.</p>
-            <img src="Screenshot2.png" alt="Both halves of an M" width="150" height="150">
+            <div class="grid-container">
+                <div>
+                    <h2>1. Open Figma</h2>
+                    <p>First, I opened up <strong class="montserrat">Figma</strong>, which I've been familiar with for a
+                        couple
+                        of years now.</p>
+                    <img src="figma-3d-icon-free-png.webp" alt="Figma icon" width="150" height="150">
+                </div>
+                <div>
+                    <h2>2. Draw Shape &lpar;1/2&rpar;</h2>
+                    <p>Once in the design interface, I used the pen tool to create one half of the M.</p>
+                    <img src="Screenshot1.png" alt="One half of an M" width="150" height="150">
+                </div>
+                <div>
+                    <h2>3. Draw Shape &lpar;2/2&rpar;</h2>
+                    <p>Then I duplicated &amp; mirrored the half since it was necessary. This is what I exported to my
+                        files.</p>
+                    <img src="Screenshot2.png" alt="Both halves of an M" width="150" height="150">
 
-            <p>Lastly, I uploaded the file to my VSCode project &amp; added this line between the <strong>/head</strong>
-                tags.</p>
-            <img src="Screenshot3.png" alt="HTML for my favicon" width="700" height="40">
+                </div>
+                <div class="full_width">
+                    <h2>4. Add to VSCode</h2>
+                    <p>Lastly, I uploaded the file to my VSCode project &amp; added this line between the
+                        <strong><code>&lt;head&gt;</code></strong>
+                        tags.
+                    </p>
+                    <img src="Screenshot3.png" alt="HTML for my favicon" width="700" height="40">
+
+                </div>
+            </div>
 
             <br><br>
+
+            <h2>Additional Information</h2>
+            <p>A favicon doesn't need to be very big, so they're typically 16x16 or 32x32 pixels in size. If you want to
+                make one for your own website or whatever other purposes, be sure to export it at a reasonable size.</p>
+            <br>
+
+            <h2>Resources</h2>
+            <p>The official website for <strong class="montserrat">Figma</strong> can be found <a href="https://www.figma.com/" target="_blank">here</a>.</p>
+            <p>The official website for <strong class="montserrat">VSCode</strong> can be found <a href="https://code.visualstudio.com/" target="_blank">here</a>.</p>
+
+            <br>
 
             <a href="../index.html">Go back</a>
         </main>

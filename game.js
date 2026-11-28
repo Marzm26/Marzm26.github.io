@@ -85,12 +85,7 @@ window.onload = function () {
         updateButton(ballType, buttons[ballType]);
     }
 
-    document.addEventListener('mousemove', function (event) {
-        mouseX = event.offsetX;
-        mouseY = event.offsetY;
-    });
-
-    document.addEventListener("click", function () {
+    function onClick() {
         var v = -1;
         var x = mouseX;
         var y = mouseY;
@@ -128,6 +123,18 @@ window.onload = function () {
                 break;
             }
         }
+    }
+
+    //User interaction
+    document.addEventListener('mousemove', function (event) {
+        mouseX = event.offsetX;
+        mouseY = event.offsetY;
+    });
+
+    document.addEventListener("pointerdown", function (event) { //Detects mouse & touch
+        mouseX = event.offsetX;
+        mouseY = event.offsetY;
+        onClick();
     })
 
     function updateButton(ballType, btn) {
